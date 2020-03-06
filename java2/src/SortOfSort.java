@@ -1,21 +1,6 @@
 public class SortOfSort {
-    private static int [] sortedArr;
 
-    public SortOfSort(){
-    }
-
-    public SortOfSort(int [] arr){
-        sortedArr = new int[arr.length];
-        for(int i = 0; i < sortedArr.length; i++){
-            sortedArr[i] = arr[i];
-        }
-    }
-
-    public int [] getArray(){
-        return sortedArr;
-    }
-
-    public void sortOfSort(int [] array) {
+    public int [] sortOfSort(int [] array) {
        int arrStart = 0;
        int arrLength = array.length - 1;
        boolean goRight = true;
@@ -42,7 +27,7 @@ public class SortOfSort {
                 goRight = !goRight;
             }
         }
-        sortedArr = array;
+        return array;
     }
 
     public int [] findMaxAndIndex(int [] array, int start, int length){
